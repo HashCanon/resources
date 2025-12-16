@@ -2,79 +2,42 @@
   "contacts": {
     "emails": [
       {
-        "email": "hashjing@proton.me",
+        "email": "hashcanon@proton.me",
         "caption": "Email (support)",
-        "description": "Public support alias for HashJing NFT enquiries (forwards to the author)."
+        "description": "Primary support inbox for HashCanon."
       },
       {
         "email": "datasattva@proton.me",
         "caption": "Email (personal)",
-        "description": "Personal inbox of the creator — use for partnerships, legal or press questions."
+        "description": "Direct contact for the author."
       }
-    ],
+    ]
+  },
+  "media": {
     "x": [
       {
-        "x": "@HashJing",
-        "caption": "X (HashJing-project)",
-        "description": "Official drop-focused account — mint countdowns, trait reveals, giveaways."
-      },
-      {
         "x": "@DataSattva",
-        "caption": "X (personal)",
-        "description": "Creator’s personal profile — dev logs, generative-art threads, philosophy notes."
-      }
-    ],
-    "discord": [
-      {
-        "discord": "DataSattva",
-        "caption": "Discord (server)",
-        "description": "Main Discord server. Contains the **HashJing NFT** section with channels #welcome-hj, #pre-mint, #mint-live, #holders."
-      },
-      {
-        "discord": "https://discord.com/invite/hashjing",
-        "caption": "Discord (vanity invite)",
-        "description": "Vanity invite link for HashJing — takes you straight to the DataSattva Discord server."
+        "caption": "X / Twitter (personal)",
+        "description": "Personal updates and project announcements."
       }
     ]
   },
   "resources": {
     "HJ": [
       {
-        "discussions": "https://github.com/DataSattva/hashjing/discussions",
-        "caption": "GitHub Discussions",
-        "description": "Community Q&A, announcements and support board."
-      },
-      {
-        "whitepaper": "https://github.com/DataSattva/hashjing/blob/main/WhitePaper.ipynb",
-        "caption": "Whitepaper",
-        "description": "Full mathematical and conceptual details"
-      },
-      {
-        "demo": "https://datasattva.github.io/hashjing-demo/",
-        "caption": "Live Demo",
-        "description": "Online generator: type any text / hash and get an instant SVG / PNG mandala."
-      },
-      {
-        "github-core": "https://github.com/DataSattva/hashjing",
+        "github-core": "https://github.com/HashCanon/hashcanon.github.io",
         "caption": "GitHub (core)",
-        "description": "Core HashJing generator (Python / JS). MIT-licensed notebooks, docs and examples."
+        "description": "Main repository with README, White Paper, Art Manifesto, and Famous Blockchain Hashes."
       },
       {
-        "medium": "https://medium.com/@DataSattva",
-        "caption": "Medium blog",
-        "description": "Future home for deep-dive articles: entropy visuals, teaching guides, project updates."
-      }     
-    ],
-    "nft":[
-      {
-        "github-nft": "https://github.com/DataSattva/hashjing-nft",
-        "caption": "GitHub (NFT contracts)",
-        "description": "Solidity contracts, Hardhat tests and deployment scripts for the on-chain collection."
+        "demo": "https://hashcanon.github.io/generator/",
+        "caption": "HashCanon Generator",
+        "description": "Online generator: type any text or hash and instantly render an SVG/PNG mandala."
       },
       {
-        "mint-mainnet": "https://datasattva.github.io/hashjing-mint/",
-        "caption": "Mint Main-net",
-        "description": "Final mint page for the HashJing NFT collection on Ethereum main-net."
+        "discussions": "https://github.com/HashCanon/hashcanon.github.io/discussions",
+        "caption": "GitHub Discussions",
+        "description": "Community Q&A, announcements, and support board."
       }
     ]
   }
