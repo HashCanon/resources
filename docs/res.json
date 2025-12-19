@@ -27,7 +27,7 @@
       {
         "github-core": "https://github.com/HashCanon/hashcanon.github.io",
         "caption": "GitHub (core)",
-        "description": "Main repository with README, White Paper, Art Manifesto, and Famous Blockchain Hashes."
+        "description": "Main repository with README, HashCanon Specification, Art Manifesto, and Famous Blockchain Hashes."
       },
       {
         "demo": "https://hashcanon.github.io/generator/",

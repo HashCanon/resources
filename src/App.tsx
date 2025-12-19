@@ -41,7 +41,7 @@ export default function App() {
   useAutoThemeClass();
 
   // --- manual source switch ---
-const USE_REMOTE = true; // <- set true to load from GitHub Pages
+const USE_REMOTE = false; // <- set true to load from GitHub Pages
 const LOCAL_URL  = `${import.meta.env.BASE_URL}res.json`; // served from /public/res.json
 const REMOTE_URL = "https://hashcanon.github.io/resources/res.json";
 
