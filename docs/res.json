@@ -20,6 +20,13 @@
         "caption": "X / Twitter (personal)",
         "description": "Personal updates and project announcements."
       }
+    ],
+    "links": [
+      {
+        "url": "https://paragraph.com/@hashcanon",
+        "caption": "Paragraph",
+        "description": "Official HashCanon publication: long-form posts, updates, and newsletter subscription."
+      }
     ]
   },
   "resources": {
@@ -38,6 +45,11 @@
         "discussions": "https://github.com/HashCanon/hashcanon.github.io/discussions",
         "caption": "GitHub Discussions",
         "description": "Community Q&A, announcements, and support board."
+      },
+      {
+        "discussions": "https://github.com/HashCanon/hashcanon.github.io/blob/main/LICENSE-CCBYNC.md",
+        "caption": "License",
+        "description": "Visuals & docs — CC BY-NC 4.0"
       }
     ]
   }

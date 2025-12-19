@@ -7,6 +7,7 @@ import { useAutoThemeClass } from "./hooks/useAutoThemeClass";
 type Email   = { email: string;   caption: string; description: string };
 type XHandle = { x: string;       caption: string; description: string };
 type Discord = { discord: string; caption: string; description: string };
+type MediaLink = { url: string; caption: string; description: string };
 
 type Contacts = {
   emails:  Email[];
@@ -15,6 +16,7 @@ type Contacts = {
 
 type Media = {
   x?: XHandle[]; // optional
+  links?: MediaLink[]; // optional
 };
 
 /* each resource object has 1 dynamic URL key + caption + description */
@@ -41,7 +43,7 @@ export default function App() {
   useAutoThemeClass();
 
   // --- manual source switch ---
-const USE_REMOTE = false; // <- set true to load from GitHub Pages
+const USE_REMOTE = true; // <- set true to load from GitHub Pages
 const LOCAL_URL  = `${import.meta.env.BASE_URL}res.json`; // served from /public/res.json
 const REMOTE_URL = "https://hashcanon.github.io/resources/res.json";
 
@@ -110,27 +112,46 @@ useEffect(() => {
         </section>
 
         {/* --------- MEDIA --------- */}
-        {(media?.x?.length ?? 0) > 0 && (
+        {(((media?.x?.length ?? 0) > 0) || ((media?.links?.length ?? 0) > 0)) && (
           <section className="space-y-4 mt-6">
             <h2 className="text-center text-2xl font-semibold tracking-tight">
               Media
             </h2>
+
             <div className="space-y-4 text-base leading-relaxed">
-              {media!.x!.map(({ x, caption, description }) => (
-                <p key={x}>
-                  <strong>{caption}: </strong>
-                  <a
-                    href={`https://x.com/${x.replace("@", "")}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-blue-400 underline hover:text-blue-600"
-                  >
-                    {x}
-                  </a>
-                  <br />
-                  {description}
-                </p>
-              ))}
+              {(media?.x?.length ?? 0) > 0 &&
+                media!.x!.map(({ x, caption, description }) => (
+                  <p key={`x:${x}`}>
+                    <strong>{caption}: </strong>
+                    <a
+                      href={`https://x.com/${x.replace("@", "")}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-blue-400 underline hover:text-blue-600"
+                    >
+                      {x}
+                    </a>
+                    <br />
+                    {description}
+                  </p>
+                ))}
+
+              {(media?.links?.length ?? 0) > 0 &&
+                media!.links!.map(({ url, caption, description }) => (
+                  <p key={`link:${url}`}>
+                    <strong>{caption}: </strong>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-blue-400 underline hover:text-blue-600"
+                    >
+                      {url}
+                    </a>
+                    <br />
+                    {description}
+                  </p>
+                ))}
             </div>
           </section>
         )}
