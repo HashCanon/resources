@@ -23,11 +23,16 @@
     ],
     "links": [
       {
+        "url": "https://medium.com/@datasattva",
+        "caption": "Medium",
+        "description": "HashCanon posts and updates (Medium)."
+      },
+      {
         "url": "https://paragraph.com/@hashcanon",
         "caption": "Paragraph",
-        "description": "Official HashCanon publication: long-form posts, updates, and newsletter subscription."
+        "description": "HashCanon posts and updates (Paragraph)."
       }
-    ]
+  ]
   },
   "resources": {
     "HJ": [
